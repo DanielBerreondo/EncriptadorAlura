@@ -1,37 +1,108 @@
-body {
+* {
+    background-color: #f3f5fc;
     font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
 }
 
 .intro h1 {
-    text-align: center;
-}
-
-.intro p {
-    padding-bottom: 2em;
+    color: #0A3871;
+    margin-left: 80px;
+    font-weight: bold;
 }
 
 .main_encriptador {
-    border: 1px solid black;
-    width: 50%;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    justify-content: space-between;
-    margin-left: 15px;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
 
 .text_area_fields {
-    width: 50%;
-    margin-bottom: 10px;
+    border: none;
+    color: #0A3871;
+    margin-top: 25px;
+    text-transform: lowercase;
 }
 
-.boton {
-    width: 150px;
+.text_area_fields:focus {
+    outline: none;
+}
+
+.mensaje {
+    border: none;
+    background: white;
+    color: #0A3871;
+    margin-top: 20px;
+    background-image: url(/img/Muñeco.png);
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    margin-left: 98px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.informacion {
+    font-size: 18px;
+    color: #495857;
+}
+
+.botones {
+    display: flex;
+    gap: 25px;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    width: 328px;
+    height: 65px;
+}
+
+.btn-encriptar:hover {
+    cursor: pointer;
+}
+
+.btn-desencriptar {
+    color: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    width: 328px;
+    height: 65px;
+}
+
+.btn-desencriptar:hover {
+    cursor: pointer;
+}
+
+.mensaje_desencriptado {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-copiar {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 120px;
+    color: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    position: absolute;
+    top: 75%;
+    left: 5;
+}
+
+.btn-copiar:hover {
+    cursor: pointer;
 }

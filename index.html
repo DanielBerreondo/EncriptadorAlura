@@ -14,19 +14,26 @@
 
 <body>
     <header class="intro">
+        <img src="/img/Vector.png" alt="logo alura" class="logo">
         <h1>Encriptador Alura</h1>
-        <p>Hola, mi nombre es Daniel Berreondo, y hoy te presento mi encriptador de texto, que nos servira para encriptar los mensajes que debes comunicar, el programa usa HTML5, CSS3 y Javascript, espero que te diviertas 😃</p>
     </header>
+
     <main class="main_encriptador">
+        <section>
+            <textarea class="text_area_fields" name="prompt" id="prompt" cols="30" rows="8" placeholder="Are you ready for the rock n' roll?"></textarea>
+            <div>
+                <h6 class="informacion"> <img src="/img/informacion.png" alt="vector informacion"> Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mensaje_desencriptado">
+            <textarea class='mensaje' name="" id="" cols="20" rows="10"></textarea>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
 
-
-        <form class="form">
-            <label for="prompt">Ingresa el texto a encriptar: </label>
-            <textarea class="text_area_fields" name="prompt" id="prompt" cols="30" rows="10" placeholder="Are you ready for the rock n' roll?"></textarea>
-            <button type="submit" class="boton">Encriptar</button>
-            <label for="texto_salida">Tu texto encriptado es: </label>
-            <textarea class="text_area_fields" name="texto_salida" id="texto_salida" cols="30" rows="10"></textarea>
-        </form>
+        </section>
     </main>
 
     <script src="app.js"></script>
