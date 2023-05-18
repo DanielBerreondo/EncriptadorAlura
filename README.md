@@ -1,7 +1,7 @@
 # EncriptadorAlura
 Bienvenid@s a mi version del proyecto del Encriptador de Texto de Alura
-El cual esta diseñado para encriptar o desencriptar texto, en cual sea el caso
-Cabe recalcar que el encriptado esta basado en reemplazar las vocales con llaves de encriptacion
+el cual esta diseñado para encriptar o desencriptar texto, en cual sea el caso
+cabe recalcar que el encriptado esta basado en reemplazar las vocales con llaves de encriptacion
 
 ## Llaves de encriptado:
 * La letra 'e' es convertida en 'enter'
