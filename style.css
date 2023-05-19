@@ -37,6 +37,9 @@
 }
 
 @media (min-width: 1242px) {
+    .prompt_area {
+        width: 700px;
+    }
     .btn-copiar {
         width: 280px;
         height: 60px;
@@ -63,6 +66,13 @@
         border-radius: 24px;
         margin-left: 98px;
     }
+    .botones {
+        width: 100%;
+    }
+    .btn-desencriptar {
+        width: 300px;
+    }
+    .btn-encriptar {}
 }
 
 @media (max-width: 1241px) {
@@ -214,4 +224,12 @@
 
 .btn-copiar:hover {
     cursor: pointer;
+}
+
+.candado {
+    background: none;
+}
+
+.candado_abierto {
+    background: none;
 }

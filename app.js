@@ -29,7 +29,10 @@ function encriptar(stringEncriptado) {
         ["i", "imes"],
         ["a", "ai"],
         ["o", "ober"],
-        ["u", "ufat"]
+        ["u", "ufat"],
+        ["m", "moin"],
+        ["p", "puos"]
+
     ];
     stringEncriptado = stringEncriptado.toLowerCase();
 
@@ -55,7 +58,10 @@ function desencriptar(stringDesencriptar) {
         ["i", "imes"],
         ["a", "ai"],
         ["o", "ober"],
-        ["u", "ufat"]
+        ["u", "ufat"],
+        ["m", "moin"],
+        ["p", "puos"]
+
     ];
     stringDesencriptar = stringDesencriptar.toLowerCase();
 
