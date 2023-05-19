@@ -43,7 +43,10 @@ function encriptar(stringEncriptado) {
     }
     for (let j = 0; j < matrizInvalido.length; j++) {
         if (stringEncriptado.includes(matrizInvalido[j])) {
-            stringEncriptado = "Por favor ingresa unicamente minusculas y sin acentos";
+            /*stringEncriptado = "Por favor ingresa unicamente minusculas y sin acentos";*/
+            alert("Por favor ingresa unicamente minusculas y sin acentos");
+            stringEncriptado = "";
+            break;
         }
     }
     return stringEncriptado;
