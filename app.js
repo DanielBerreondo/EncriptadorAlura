@@ -30,15 +30,20 @@ function encriptar(stringEncriptado) {
         ["a", "ai"],
         ["o", "ober"],
         ["u", "ufat"],
-        ["m", "moin"],
-        ["p", "puos"]
-
     ];
+
+    let matrizInvalido = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "á", "é", "í", "ó", "ú", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
     stringEncriptado = stringEncriptado.toLowerCase();
 
     for (let i = 0; i < matrizCodigo.length; i++) {
         if (stringEncriptado.includes(matrizCodigo[i][0])) {
             stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
+        }
+    }
+    for (let j = 0; j < matrizInvalido.length; j++) {
+        if (stringEncriptado.includes(matrizInvalido[j])) {
+            stringEncriptado = "Por favor ingresa unicamente minusculas y sin acentos";
         }
     }
     return stringEncriptado;
@@ -59,8 +64,6 @@ function desencriptar(stringDesencriptar) {
         ["a", "ai"],
         ["o", "ober"],
         ["u", "ufat"],
-        ["m", "moin"],
-        ["p", "puos"]
 
     ];
     stringDesencriptar = stringDesencriptar.toLowerCase();
